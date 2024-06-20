@@ -12,9 +12,9 @@ async function audioToText(filepath) {
     response_format: "verbose_json",
     timestamp_granularities: ["segment"]
   });
-  console.log(transcription.segments[0].text)
+  console.log(transcription.segments[0])
 
-  return transcription.text
+  return transcription
 }
 
 export default audioToText;
